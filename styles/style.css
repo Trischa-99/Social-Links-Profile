@@ -1,0 +1,98 @@
+:root {
+    --grey-900: #141414;
+    --grey-800: #1F1F1F;
+    --gray-700: #333333;
+    --green: #C4F82A;
+    --white: #FFFFFF;
+}
+body {
+    font-family: "Inter", serif;
+    background-color: var(--grey-900);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-preset-one {
+    font-size: 24px;
+    line-height: 150%;
+    font-weight: 600;
+}
+.text-preset-two {
+    font-size: 14px;
+    line-height: 150%;
+}
+.text-preset-two-bold {
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 700;
+}
+
+.container-profile {
+    width: 384px;
+    height: 611px;
+    background-color: var(--grey-800);
+    padding: 40px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+img {
+    width: 88px;
+    height: 88px;
+    border-radius: 44px;
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.profile-name {
+    color: var(--white);
+}
+.profile-location {
+    color: var(--green);
+}
+.description {
+    color: var(--white);
+}
+
+.container-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 289px;
+    width: 100%;
+}
+.button-link {
+    border: none;
+    border-radius: 8px;
+    background-color: var(--gray-700);
+    color: var(--white);
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s;
+}
+.button-link:hover {
+    background-color: var(--green);
+    color: var(--gray-700);
+}
+.button-link:focus {
+    background-color: var(--green);
+    color: var(--gray-700);
+    outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .container-profile {
+        width: 327px;
+        height: 579px;
+        padding: 24px;
+    }
+}
